@@ -118,10 +118,11 @@ temp/
 *.html
 *.RData
 *.Rhistory
+data/
+output/
 
 # Compressed files
 *.tar
 *.tar.gz
-
 
 # --END--
