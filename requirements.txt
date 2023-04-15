@@ -1,0 +1,17 @@
+# Basic requirements
+bitarray               == 2.0.1
+pyparsing              == 2.4.2
+psutil                 == 5.8.0
+tornado                == 6.0.4
+pyjwt                  == 2.6.0
+asyncio                == 3.4.3
+numpy                  == 1.24.2
+requests               == 2.25.1
+pillow                 == 9.5.0
+
+# For development
+setuptools             == 50.3.1
+virtualenv             == 16.7.5
+
+# For deployment 
+pyinstaller            >= 4.10
