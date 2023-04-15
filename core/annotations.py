@@ -57,16 +57,13 @@ class Annotations(object):
         for object_labels in self._annotations:
 
             # Check if there is a class name
-            try:
-                class_name = re.findall(r'[a-zA-Z]+', object_labels)
-                if(len(class_name)>1):
-                    raise UnvalidAnnotationsFile(reason = 'unvalid_class')
+            class_name = re.findall(r'[a-zA-Z]+', object_labels)
+            if len(class_name) > 1:
+                raise UnvalidAnnotationsFile(reason = 'unvalid_class')
                 
-                # If it can be parsed to float, then the class name is missing         
-                float(class_name[0])
+            if len(class_name) == 0:
                 raise UnvalidAnnotationsFile(reason = 'class')
-            except ValueError:
-                pass
+            
             
             # Check if the annotation only contains the bounding box
             numeric_parameters = re.findall(r'[-]*[0-9]+[.]*[0-9]*', object_labels)
