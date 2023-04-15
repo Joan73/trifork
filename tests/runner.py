@@ -17,8 +17,7 @@ from pathlib import Path
 import argparse
 import unittest
 
-p = Path(os.path.realpath(__file__))
-path_to_self = os.path.join(os.path.dirname(__file__))
+path_to_file = Path(os.path.realpath(__file__))
 
 def process_arguments():
     # Initialize the ArgumentParser
@@ -55,11 +54,11 @@ if __name__ == '__main__':
     tests_suite=unittest.TestSuite()
 
     if args.base_test:
-        tests_suite.addTests(unittest.defaultTestLoader.discover(f'{p.parent}', pattern='test_base*.py'))
+        tests_suite.addTests(unittest.defaultTestLoader.discover(f'{path_to_file.parent}', pattern='test_base*.py'))
     
     # TODO: Uncomment lines if rest api is available
     #if args.rest_api_test:
-    #    tests_suite.addTests(unittest.defaultTestLoader.discover(f'{p.parent}',pattern='test_rest_api*.py'))
+    #    tests_suite.addTests(unittest.defaultTestLoader.discover(f'{path_to_file.parent}',pattern='test_rest_api*.py'))
     
     test_runner = unittest.TextTestRunner(verbosity=args.verbosity)
     
