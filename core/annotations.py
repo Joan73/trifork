@@ -71,7 +71,7 @@ class Annotations(object):
             if sum([float(parameter) for parameter in numeric_parameters[:3]]) != 0:
                 raise UnvalidAnnotationsFile(reason = 'box')
             if sum([float(parameter) for parameter in numeric_parameters[3:7]]) == 0:
-                raise UnvalidAnnotationsFile(reson = 'unvalid_box')
+                raise UnvalidAnnotationsFile(reason = 'unvalid_box')
             if sum([float(parameter) for parameter in numeric_parameters[7:]]) != 0:
                 raise UnvalidAnnotationsFile(reason = 'box')
     
