@@ -28,7 +28,7 @@ Running with Docker
 
 If Docker is installed on your machine:
 
-``docker-compose up -d ``
+``docker-compose up -d``
 
 There must be an environment variable called ``REST_DATA_PATH`` set to the path where the data is stored following Kitti Format.
 
@@ -59,6 +59,7 @@ Running script
 Another possibility is to simply run the script. Although first we must install the package.
 
 ``python3 setup.py install``
+
 ``python3 ./script/run.py [OPTIONS]``
 
 Option description:
