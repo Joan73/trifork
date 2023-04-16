@@ -2,7 +2,7 @@
 Technical assignment
 ===================
 
-This is the technical assignment repo. This file contains instructions on how to run the code and the tests, as well as an explanation on the folder structure.
+This is the technical assignment repository. This file contains instructions on how to run the code and the tests, as well as an explanation on the folder structure.
 
 ---------------
 
