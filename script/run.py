@@ -111,9 +111,9 @@ def main():
     try:
         paths = InputOutputPathConsistensy(path_to_data, path_to_output)
     except NoSuchPath as e:
-        debug_log_Exception()
+        debug_log_Exception(e)
     except UnvalidKittiFolderFormat as e:
-        debug_log_Exception()
+        debug_log_Exception(e)
     
     logger.info('Input/output path are consistent with Kitti Format')
             
@@ -138,7 +138,7 @@ def main():
                                        path_to_scaled_annotations
                                        )
         except UnvalidAnnotationsFile as e:
-            debug_log_Exception()
+            debug_log_Exception(e)
         
         img_ann.scale(target_width = args.target_width, target_height = args.target_height)
         img_ann.write()
