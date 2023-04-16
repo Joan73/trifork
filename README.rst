@@ -64,15 +64,12 @@ Another possibility is to simply run the script. Although we must first install 
 
 Option description:
 
-Name, shorthand       Default      Description
-
---target_width          284         target image width
-
---target_height         284         target image height
-
---input_path            ''          path to data
-
---output_path           ''          path to store scaled images and annotations
+| Name, shorthand  |    Default       | Description                                 |
+| ---------------- | ---------------- | ------------------------------------------- | 
+| --target_width   |       284        | target image width                          |
+| --target_height  |       284        | target image height                         |
+| --input_path     |       ''         | path to data                                |
+| --output_path    |       ''         | path to store scaled images and annotations |
 
 ----------------
 
