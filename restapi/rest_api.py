@@ -270,7 +270,7 @@ class ScaleHandler(TokenCheckHandler, JSONPayloadConversionHandler):
         '''Check authorization'''
         debug_log_prepare(self)
         JSONPayloadConversionHandler.prepare(self)
-        #TokenCheckHandler.prepare(self)
+        TokenCheckHandler.prepare(self)
 
     # ----------------------------------------------------------------
     def on_finish(self):
