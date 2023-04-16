@@ -15,7 +15,7 @@ The core folder contains the OOP structure that will be used in the script. Prov
 
 The script folder contains the script that scales the given data.
 
-The restapi folder contains a simple tornado base Rest API.
+The restapi folder contains a simple tornado based Rest API.
 
 The tests folder contains all the unittest. Continue reading to know how to easily run the unittest.
 
