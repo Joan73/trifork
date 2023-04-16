@@ -154,7 +154,7 @@ class TestPathConsistensy(unittest.TestCase):
     # ===================================================================================
     def test_path_consistensy_unvalid_kitti_folder_structure(self):
         """
-        Testing an input path that does not follow Kiiti format folder structure
+        Testing an input path that does not follow Kitti format folder structure
         """
         try:
             Path(os.fspath(os.path.join(path_to_self,'unvalid_data'))).mkdir()

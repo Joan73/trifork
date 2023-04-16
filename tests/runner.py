@@ -30,13 +30,13 @@ def process_arguments():
                         required= False,
                         default = True,
                         action= 'store_true',
-                        help = "Only run the basic tests")
+                        help = "Run the basic tests")
     parser.add_argument('--rest_api_test',
                         dest    = 'rest_api_test',
                         required= False,
                         default = True,
                         action= 'store_true',
-                        help = "Only run rest api tests")
+                        help = "Run rest api tests")
     parser.add_argument('--verbosity',
                         dest    = 'verbosity',
                         required= False,
@@ -56,9 +56,8 @@ if __name__ == '__main__':
     if args.base_test:
         tests_suite.addTests(unittest.defaultTestLoader.discover(f'{path_to_file.parent}', pattern='test_base*.py'))
     
-    # TODO: Uncomment lines if rest api is available
-    #if args.rest_api_test:
-    #    tests_suite.addTests(unittest.defaultTestLoader.discover(f'{path_to_file.parent}',pattern='test_rest_api*.py'))
+    if args.rest_api_test:
+        tests_suite.addTests(unittest.defaultTestLoader.discover(f'{path_to_file.parent}',pattern='test_rest_api*.py'))
     
     test_runner = unittest.TextTestRunner(verbosity=args.verbosity)
     
