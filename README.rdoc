@@ -76,4 +76,4 @@ Name, shorthand | Default | Description
 Running the tests
 -----------------
 
-  ``python3 ./tests/runner.py ``
+  ``python3 ./tests/runner.py``
