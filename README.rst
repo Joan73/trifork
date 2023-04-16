@@ -19,7 +19,7 @@ The restapi folder contains a simple tornado based Rest API.
 
 The tests folder contains all the unittest. Continue reading to know how to easily run the unittest.
 
-The utils folder contains a customized loggers.
+The utils folder contains customized loggers.
 
 ----------------
 
