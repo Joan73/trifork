@@ -46,7 +46,7 @@ The following URL is an example on how to get an authentication token that will 
 
 Keep the token and use it in the headers so that the Rest API can authenticate you. (i.e. There must be the following header in the get request: ``Authorization: bearer <token>``)
 
-The following URL will scale the provided data
+The following URL will scale the provided data and save the results in the ``REST_DATA_PATH`` path in a folder automatically created.
 
 ``http://localhost:8080/images``
 
