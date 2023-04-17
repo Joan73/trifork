@@ -63,13 +63,10 @@ def debug_log_prepare(handler):
 
     """
     name = type(handler).__name__
-    if 'Jira' in name:
-        logger.debug(f'{name} > Jira request packages are not logged')
-    else:
-        logger.debug(f'{name} > Request Received : {handler.request}')
-        logger.debug(f'{name} > Headers : {handler.request.headers}')
-        logger.debug(f'{name} > Arguments: {handler.request.arguments}')
-        logger.debug(f'{name} > Body: {handler.request.body}')
+    logger.debug(f'{name} > Request Received : {handler.request}')
+    logger.debug(f'{name} > Headers : {handler.request.headers}')
+    logger.debug(f'{name} > Arguments: {handler.request.arguments}')
+    logger.debug(f'{name} > Body: {handler.request.body}')
 
 
 # ----------------------------------------------------------------
